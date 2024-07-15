@@ -7,23 +7,21 @@ import { AfterViewInit, Component } from '@angular/core';
 })
 export class HomeComponent implements AfterViewInit {
   ngAfterViewInit() {
-    // const cursor = document.querySelector('.cursor');
 
-    // document.addEventListener('mousemove', (e) => {
-    //   if (window.innerWidth >= 1024) {
-    //     let x = e.pageX ; 
-    //     let y = e.pageY ;
+  }
 
-    //     cursor?.setAttribute('style', `background: radial-gradient(450px at ${x}px ${y}px, rgba(60, 179, 113, 0.15), transparent 80%);`);
-    //   }
-    //   else {
-    //     cursor?.setAttribute('style', `background: radial-gradient(600px at 8px 8px, rgba(60, 179, 113, 0.15), transparent 80%);`);
-    //   }
-    // });
+  openBuiltcodeLink(): void {
+    var companyLink = 'https://www.builtcode.com.br';
+    window.open(companyLink, '_blank');
+  }
 
-    // document.addEventListener("mouseout", () => {
-    //   const cursor = document.querySelector('.cursor');
-    //   cursor?.setAttribute('style', `background: radial-gradient(600px at 8px 8px, rgba(60, 179, 113, 0.15), transparent 80%);`);
-    // });
+  openParkcodeLink(): void {
+    var companyLink = 'https://parquetecmar.angra.rj.gov.br';
+    window.open(companyLink, '_blank');
+  }
+
+  openProjectLink(): void {
+    var companyLink = 'https://github.com/AugustoOmena/FRONTEND_Clinica_Medica';
+    window.open(companyLink, '_blank');
   }
 }

@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    max-width: 1050px;
 }
 
 .left-column, .right-column {
@@ -78,7 +79,7 @@ h1, h2, a {
 }
 
 h1{
-    font-size: 60px;
+    font-size: 53px;
 }
 
 h2 {
@@ -128,7 +129,7 @@ p {
 
 .glass:hover .enterprise {
     color: rgb(128, 203, 191);
-    transition: color 0.3s ease;
+    transition: color 0.7s ease;
 }
 
 .bottom-20{
@@ -158,7 +159,7 @@ p {
     width: 24px;
     height: 24px;
     color: #EBF5FF80;
-    transition: color 0.3s ease;
+    transition: color 0.7s ease;
   }
   
   .social-icons a:hover .icon {

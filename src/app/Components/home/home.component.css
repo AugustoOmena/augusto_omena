@@ -2,7 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    max-width: 1050px;
+    max-width: 1100px;
+}
+
+.content {
+    background-color: rgba(45, 53, 72, 0.612);
+    border-radius: 15px;
+    padding: 35px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .left-column, .right-column {
@@ -90,6 +98,11 @@ p {
     color: #EBF5FF80;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 .p-90{
     font-size: 90%;
 }
@@ -106,8 +119,8 @@ p {
 }
 
 .glass-container:hover .glass {
-    opacity: 0.5;
-    transition: color 0.3s ease;
+    opacity: 0.7;
+    transition: color 0.6s ease;
 }
 
 .glass:hover {
@@ -128,7 +141,7 @@ p {
 }
 
 .glass:hover .enterprise {
-    color: rgb(128, 203, 191);
+    color: rgb(51, 227, 198);
     transition: color 0.7s ease;
 }
 
@@ -140,32 +153,66 @@ p {
     margin-bottom: 90px;
 }
 
-.top-90{
-    margin-top: 90px;
-}
-
 .social-icons {
     display: flex;
     gap: 10px;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .icon {
+}
+
+.icon {
     width: 24px;
     height: 24px;
     color: #EBF5FF80;
     transition: color 0.7s ease;
-  }
-  
-  .social-icons a:hover .icon {
+}
+
+.social-icons a:hover .icon {
     color: #dcdcdc;
-  }
-  
-  .no-underline {
+}
+
+.no-underline {
     text-decoration: none;
-  }
+}
+
+.bottom {
+    padding: 35px;
+    width: 100%;
+}
+
+hr {
+    color: white;
+}
+
+.detail {
+    color: rgb(51, 227, 198); 
+    background-color: rgba(45, 212, 191, .1);
+    border-radius: 9px; 
+    padding: 3px; 
+    margin-left: 5px; 
+    margin-right: 5px; 
+    padding-left: 7px; 
+    padding-right: 7px;
+}
+
+.title-content {
+    font-size: 25px;
+}
+
+.link {
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+
+.link p {
+    transition: color 0.3s ease;
+    color: white;
+}
+
+.link p:hover {
+    color: rgb(51, 227, 198);
+}

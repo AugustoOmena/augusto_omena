@@ -31,6 +31,15 @@
     text-align: justify;
 }
 
+@media (min-width: 600px) {
+    .glass-container .glass {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        max-width: 1100px;  
+    }
+}
+
 @media (max-width: 768px) {
     .left-column, .right-column {
         flex: 1 1 100%;
@@ -108,6 +117,17 @@ a {
 
 .p-90{
     font-size: 90%;
+    max-width: 100%;
+}
+
+.details span {
+    color: rgb(51, 227, 198); 
+    background-color: rgba(45, 212, 191, .1);
+    border-radius: 9px; 
+    margin: 5px;
+    margin-bottom: 8px;
+    padding: 3px 7px;
+    white-space: nowrap;
 }
 
 .scroll-div{
@@ -120,6 +140,12 @@ a {
 .glass {
     padding: 20px;
 }
+
+.glass p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
 
 .glass-container:hover .glass {
     opacity: 0.7;
@@ -191,17 +217,6 @@ hr {
     color: white;
 }
 
-.detail {
-    color: rgb(51, 227, 198); 
-    background-color: rgba(45, 212, 191, .1);
-    border-radius: 9px; 
-    padding: 3px; 
-    margin-left: 5px; 
-    margin-right: 5px; 
-    padding-left: 7px; 
-    padding-right: 7px;
-}
-
 .title-content {
     font-size: 25px;
 }
@@ -218,4 +233,8 @@ hr {
 
 .link p:hover {
     color: rgb(51, 227, 198);
+}
+
+.line-space {
+line-height: 1.8;
 }

@@ -52,6 +52,11 @@
     .content {
         padding: 25px 15px 15px 15px;
     }
+
+    .left-column p {
+        text-align: left;
+
+    }
 }
 
 .cursor {

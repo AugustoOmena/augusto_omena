@@ -1,6 +1,6 @@
 <div class="container">
     <div class="left-column">
-      <h1 class=".text-4xl .font-bold .tracking-tight .text-slate-200 sm:text-5xl bona-nova-sc-bold" >Augusto Omena</h1>
+      <h1 class="text-sm font-bold tracking-tight text-slate-200 sm:text-xs bona-nova-sc-bold"  >Augusto Omena</h1>
       <h2 class="bona-nova-sc-regular">Full Stack Developer</h2>
       <div class="social-icons">
         <a href="https://www.linkedin.com/in/augusto-omena" target="_blank" aria-label="LinkedIn">
@@ -23,15 +23,34 @@
 </div> 
 
 <div class="container">
-  <div class="center-column bottom-90">
-    <div class="content">
+  <div class="center-column">
+    <div class="content paddingDivResonant">
       <h2 class="title-content">Experience</h2>
       <div class="glass-container">
         <a [href]="'https://www.builtcode.com.br'" target="_blank" class="no-underline">
           <div class="glass">
             <div class="left-column" style="max-width: 140px; padding: 2px 0;">
               <p class="bona-nova-sc-regular" style="font-size: 12px;">
-                April 2024 - Present
+                Oct 2024 - Present
+              </p>
+            </div>
+            <div class="right-column bona-nova-sc-regular" style="padding: 0 0;">
+                <p class="bona-nova-sc-regular enterprise" >Full Stack Developer · Firjan | Eletronuclear</p>
+              <p class="p-90">
+                Responsável por atualizações e suporte do sistema GACT e AVACT da Eletronuclear
+              </p>
+              <p translate="no" class="details line-space p-90">
+                <span>AngularJS</span>
+                <span>.NET Framework</span>
+              </p>
+            </div>
+          </div>
+        </a>
+        <a [href]="'https://www.builtcode.com.br'" target="_blank" class="no-underline">
+          <div class="glass">
+            <div class="left-column" style="max-width: 140px; padding: 2px 0;">
+              <p class="bona-nova-sc-regular" style="font-size: 12px;">
+                April 2024 - Oct 2024
               </p>
             </div>
             <div class="right-column bona-nova-sc-regular" style="padding: 0 0;">
@@ -101,27 +120,25 @@
     </div>
 
       <div class="content">
-        <h2 class="title-content">Selected Project</h2>
+        <h2 class="title-content">Selected Template</h2>
         <div class="glass-container">
           <a [href]="'https://github.com/AugustoOmena/Clinica-Medica-webapp'" target="_blank" class="no-underline">
             <div class="glass">
               <div class="left-column" style="max-width: 140px; padding: 2px 0;">
                 <p class="bona-nova-sc-regular" style="font-size: 12px;">
-                  April 2024 - Mai 2024 (~6 days)
+                  Sep 2024 (2 days)
                 </p>
               </div>
               <div class="right-column bona-nova-sc-regular" style="padding: 0 0;">
-                  <p class="bona-nova-sc-regular enterprise" >Internal medicine · Project</p>
-                <p class="p-90">
-                  Developed a study project using Angular, focusing on implementing JWT authentication to ensure application security. The project includes creating, reading, updating, and deleting (CRUD) entities, along with an efficient filtering system to manage these entities. This project showcases my ability to build secure and functional web applications using modern development practices with Angular.                </p>
-                  <p translate="no" class="details line-space p-90">
-                    <span>Angular</span>
-                    <span>.NET</span>
-                    <span>C#</span>
-                    <span>TypesCript</span>
-                    <span>HTML</span>
+                  <p class="bona-nova-sc-regular enterprise" >api-base-net8 · Template</p>
+                  <p class="p-90">
+                    Developed using .Net 8. This is a comprehensive template to use in APIs for multiple projects that need a scalable foundation with best practices.
                   </p>
-                </div>
+                  <p translate="no" class="details line-space p-90">
+                    <span>.NET 8</span>
+                    <span>C#</span>
+                  </p>
+              </div>
             </div>
           </a>
         </div>
@@ -130,6 +147,42 @@
         </a>
       </div>
     </div>
+
+    <div class="container" style="padding: 0;">
+      <div class="left-column">
+        <img src="imgs/computer.png" alt="">
+      </div>
+      <div class="right-column bona-nova-sc-regular">
+        <h1 class="text-sm font-bold tracking-tight text-slate-200 sm:text-xs bona-nova-sc-bold" 
+          style="margin-top: 30px;">
+          More projects
+        </h1>
+        <p class="bona-nova-sc-regular">
+          See some of my open source line projects, private projects and GitHub.</p>
+        <div class="container" style="padding-left: 0; padding-right: 0;">
+          <div class="left-column buttonProjects-column">
+            <a class="link" href="https://github.com/AugustoOmena" target="_blank">
+              <div class="buttonProjects">
+                <p style="color:black; margin: 0; text-align: center;">
+                  GitHub  
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="right-column buttonProjects-column bona-nova-sc-regular">
+            <div class="buttonProjects"(click)="showMessage()" >
+              <p style="color:black; margin: 0;">
+                Catálogo  
+              </p>
+            </div>
+          </div>
+          <div *ngIf="messageVisible" class="alert-message">
+            Opa, Estou trabalhando nessa tela e logo estará disponível.
+          </div>
+        </div> 
+      </div>
+    </div> 
+
 
     <div class="bottom">
       <hr>

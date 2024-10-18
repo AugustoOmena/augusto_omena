@@ -9,5 +9,14 @@ export class HomeComponent implements AfterViewInit {
   ngAfterViewInit() {
 
   }
+  messageVisible = false;
+
+  showMessage() {
+    this.messageVisible = true;
+
+    setTimeout(() => {
+      this.messageVisible = false;
+    }, 3000);
+  }
 
 }

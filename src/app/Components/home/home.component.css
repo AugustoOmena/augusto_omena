@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 3.4%;
     max-width: 1100px;
 }
 
@@ -10,7 +10,10 @@
     border-radius: 15px;
     padding: 35px;
     text-align: center;
-    margin-bottom: 50px;
+}
+
+.paddingDivResonant {
+    margin-bottom: 4.5%;
 }
 
 .left-column, .right-column {
@@ -22,9 +25,20 @@
     box-sizing: border-box;
 }
 
+.left-column img {
+    max-width: 350px;
+}
+
 .center-column {
     width: 100%;
     box-sizing: border-box;
+}
+
+.buttonProjects-column {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .right-column {
@@ -37,6 +51,10 @@
         flex-wrap: wrap;
         padding: 20px;
         max-width: 1100px;  
+    }
+
+    .right-column .buttonProjects-column {
+        padding-top: 42px !important;
     }
 }
 
@@ -55,7 +73,28 @@
 
     .left-column p {
         text-align: left;
+    }
 
+    .left-column img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .left-column .buttonProjects {
+        margin: 0 5px 0 0 !important;
+    }
+
+    .right-column .buttonProjects {
+        margin: 0 0 0 5px !important;
+    }
+
+    .left-column .buttonProjects-column, .right-column .buttonProjects-column {
+        flex: 1 1 50%;
+    }
+
+    .left-column img {
+        max-width: 50%; 
     }
 }
 
@@ -80,6 +119,9 @@
         position: sticky;
     }
     
+    .right-column .buttonProjects-column {
+        padding-top: 110px !important;
+    }
 }
 
 .text-4xl {
@@ -142,6 +184,24 @@ a {
     overflow-y: auto;
 }
 
+.buttonProjects {
+    position: relative;
+    margin: 10px;
+    background-color: white;
+    border-radius: 27px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    max-width: 205px;
+    transition: 0.3s;
+    z-index: 20;
+  }
+
+  .buttonProjects:hover {
+    box-shadow: 0 0 15px 5px #33E3C6;
+    cursor: pointer;
+  }
+
 .glass {
     padding: 20px;
 }
@@ -181,10 +241,6 @@ a {
 
 .bottom-20{
     margin-bottom: 20px;
-}
-
-.bottom-90{
-    margin-bottom: 90px;
 }
 
 .social-icons {
@@ -243,3 +299,16 @@ hr {
 .line-space {
 line-height: 1.8;
 }
+
+.alert-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f4db36;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    z-index: 1000;
+  }

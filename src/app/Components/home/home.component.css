@@ -167,14 +167,22 @@ a {
     max-width: 100%;
 }
 
+.details {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 70%;
+}
+
 .details span {
     color: rgb(51, 227, 198); 
     background-color: rgba(45, 212, 191, .1);
-    border-radius: 9px; 
+    border-radius: 19px; 
     margin: 5px;
     margin-bottom: 8px;
-    padding: 3px 7px;
+    padding: 2px 7px;
     white-space: nowrap;
+    text-wrap: nowrap;
 }
 
 .scroll-div{

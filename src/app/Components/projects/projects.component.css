@@ -1,0 +1,51 @@
+.contentProjects {
+    padding: 35px;
+    text-align: center;
+}
+
+.goBack {
+    color: rgb(51, 227, 198);
+    font-weight: 700;
+    margin-top: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.rotate-180 {
+    transform: rotate(180deg)
+}
+
+.arrow {
+    color: rgb(51, 227, 198);
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.transition-transform {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
+
+.goBack:hover .arrow {
+    transform: translateX(-8px) rotate(180deg);
+}
+
+table th, table td {
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  }

@@ -1,22 +1,18 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css', '../app/app.component.css']
 })
-export class HomeComponent implements AfterViewInit {
-  ngAfterViewInit() {
-    window.scrollTo(0, 0);
-  }
+export class HomeComponent {
   messageVisible = false;
 
-  showMessage() {
-    this.messageVisible = true;
-
-    setTimeout(() => {
-      this.messageVisible = false;
-    }, 3000);
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 
 }

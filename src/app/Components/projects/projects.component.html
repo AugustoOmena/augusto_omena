@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="left-column">
+  <div class="left-column" style="padding-top: 10vh; padding-bottom: 5vh;">
     <a class="goBack" [routerLink]="['/home']">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="rotate-180 arrow transition-transform" fill="currentColor" aria-hidden="true">
         <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"></path>
@@ -11,14 +11,16 @@
     </h1>
 </div> 
 
-<div class="container">
+<div style="width: 100%;">
   <div class="center-column">
     <table class="table">
       <thead>
         <tr>
           <th class="sticky-header" scope="col">Year</th>
           <th class="sticky-header" scope="col">Project</th>
-          <th class="sticky-header" scope="col">Description</th>
+          <th class="sticky-header" scope="col">Made at</th>
+          <th class="sticky-header" scope="col">Built with</th>
+          <th class="sticky-header" scope="col">Link</th>
         </tr>
       </thead>
       <tbody>
@@ -29,9 +31,94 @@
             </p>
           </th>
           <td>
-            <p class="bona-nova-sc-regular enterprise" >Base API .NET 8</p>
+            Template for creating .NET 8 Clean Arquitechture APIs
           </td>
-          <td>Template for creating .NET 8 Clean Arquitechture APIs</td>
+          <td><p class="bona-nova-sc-regular enterprise">Upstatement</p></td>
+          <td>
+            <p translate="no" class="details line-space p-90">
+              <span>.NET 8</span>
+              <span>C#</span>
+            </p>
+          </td>
+          <td>
+            <a class="link" href="https://github.com/AugustoOmena/api-base-net8" target="_blank">
+              github
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="rotate-90 arrow transition-transform" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <p class="bona-nova-sc-regular" style="font-size: 12px;">
+              2024
+            </p>
+          </th>
+          <td>
+            VetConnect - Veterinary Clinic
+          </td>
+          <td><p class="bona-nova-sc-regular enterprise">University</p></td>
+          <td>
+            <p translate="no" class="details line-space p-90">
+            <span>.NET 8</span>
+            <span>Angular 18</span>
+            </p>
+          </td>
+          <td>
+            <a class="link" href="https://github.com/AugustoOmena/VetConnect" target="_blank">
+              github
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="rotate-90 arrow transition-transform" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <p class="bona-nova-sc-regular" style="font-size: 12px;">
+              2024
+            </p>
+          </th>
+          <td>
+            Web and Mobile Development
+          </td>
+          <td><p class="bona-nova-sc-regular enterprise">Builtcode</p></td>
+          <td>
+            <p translate="no" class="details line-space p-90">
+            <span>.NET 8</span>
+            <span>Angular 18</span>
+            <span>React Native</span>
+            </p>
+          </td>
+          <td>
+            
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <p class="bona-nova-sc-regular" style="font-size: 12px;">
+              2024
+            </p>
+          </th>
+          <td>
+            CRUD with images
+          </td>
+          <td><p class="bona-nova-sc-regular enterprise">Upstatement</p></td>
+          <td>
+            <p translate="no" class="details line-space p-90">
+            <span>.NET 8</span>
+            <span>React Native</span>
+            </p>
+          </td>
+          <td>
+            <a class="link" href="https://github.com/AugustoOmena/Crud_Products_Wich_Images" target="_blank">
+              github
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="rotate-90 arrow transition-transform" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </td>
         </tr>
       </tbody>
     </table>

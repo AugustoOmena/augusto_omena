@@ -13,8 +13,24 @@
     text-decoration: none;
 }
 
+.link {
+    color: #EBF5FF80;
+    margin-top: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.link:hover {
+    color: rgb(51, 227, 198);
+}
+
 .rotate-180 {
     transform: rotate(180deg)
+}
+
+.rotate-90 {
+    transform: rotate(-45deg)
 }
 
 .arrow {
@@ -34,9 +50,20 @@
     transform: translateX(-8px) rotate(180deg);
 }
 
+.link:hover .arrow {
+    transform: translate(2px, -2px) rotate(-45deg);
+    color: rgb(51, 227, 198);
+}
+
+.link .arrow {
+    transform: translate(0, 0) rotate(-45deg);
+    transition: transform 0.15s cubic-bezier(.4, 0, .2, 1);
+    color: #EBF5FF80;
+}
+
 table th, table td {
     background-color: transparent;
-    text-align: center;
+    text-align: left;
     color: white;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
@@ -48,4 +75,14 @@ table th, table td {
     backdrop-filter: blur(10px);
     z-index: 1000;
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  }
+
+  th p,
+  td p {
+    margin-bottom: 0;
+  }
+
+  td p span,
+  td a {
+    margin-top: 2px;
   }
